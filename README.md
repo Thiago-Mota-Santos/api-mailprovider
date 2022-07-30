@@ -8,64 +8,70 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
 
-<img src="exemplo-image.png" alt="exemplo imagem">
+![mailtrap](https://user-images.githubusercontent.com/75326612/182003255-b1a063b5-47db-43db-8291-f1cfed3cc6fd.png)
 
 
- Projeto 'Login' criado com react-ts, com o objetivo de manipular o context (hook react), localStorage para persistir dados, para tal, a aplicação usa 'email/senha' para armazenar os dados localmente no navegador.
+
+ Projeto 'api-mailprovider' criado com typescript, com o objetivo criar uma api para envio de emails, usando o principio de SOLID, para uma melhor organização do código e experimentar esse novo modelo em aplicações.
+ Simples funcionalidade de receber dados em modo POST de um programa que envia dados para uma API (insomnia) e enviar um email no mailtrap
 
 
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-* clonar o projeto com para a sua máquina local. (git clone https://github.com/Thiago-Mota-Santos/Login-project.git)
+* clonar o projeto com para a sua máquina local. (git clone https://github.com/Thiago-Mota-Santos/api-mailprovider.git)
 * verificar de ter o node.js instalado, juntamente com o gerenciador de pacotes (npm ou yarn)
 
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Instalando <api-mailprovider>
 
-Para instalar o <Login-project>, siga estas etapas:
+Para instalar o <api-mailprovider>, siga estas etapas:
 
 
 
 Windows:
 ```
-clonar o projeto com para a sua máquina local. (git clone https://github.com/Thiago-Mota-Santos/Login-project.git)
-cd Auth (acessar a pasta do projeto)
+clonar o projeto com para a sua máquina local. (git clone https://github.com/Thiago-Mota-Santos/api-mailprovider.git)
+cd api-rest-typescript (acessar a pasta do projeto, caso esteja em outra pasta)
 npm install (para instalar as dependências do node.js na sua máquina)
 npm run dev (iniciar o projeto)
-caso a aba contendo o projeto não abra automáticament em seu navegador, acesse : http://localhost:3000/ ou ![image](https://user-images.githubusercontent.com/75326612/174876669-638c00b8-884e-4702-9414-ce5db0cacc71.png) ctrl + botão de clicar do mouse
+
 
  
 ```
 
-## ☕ Usando <Login-project>
+## ☕ Usando <api-mailprovider>
 
-Para usar <login-project>, siga estas etapas:
-  
-* Após rodar o programa no [local.host](http://localhost:3000/)
-* Clique em Register e cadastre um usuário, preenchendo os campos de email/senha;
-* Você também pode tentar fazer login primeiramente para verificar as mensagens de erro, tente também digitar emails diferentes no campo <register> para ver os erros;
-* Após concluir o registro, faça login utilizando os mesmos dados que você utilizou para se registrar;
-* Utilize (F12) ou inspecionar elemento da página e navegue até (aplication) ![image](https://user-images.githubusercontent.com/75326612/174878091-81ad34b5-f2f7-46ef-bc1f-8611d545e3dd.png);
-* Quando você faz o login é gerado um token, verifique em (aplication);
+Para usar <api-mailprovider>, siga estas etapas:
+
+
+* No javascript, entre na pasta providers/implements/MailTrapMailProvider e no constructor, coloque os seus dados do mailtrap (host,port,user,pass), para funcionar na sua máquina.
+* npm run dev (Para executar o projeto)
+* Usar o insomnia para fazer o envio dos dados em json para a api. (Tem que ser em post), no link : http://localhost:3333/users
+* ![Screenshot_77](https://user-images.githubusercontent.com/75326612/182003503-8ed3521e-8cdb-4cc5-9a73-c1d25dc1eb9a.png)
+
+* Com os campos : Name, email, password
+{
+    name: "example",
+    email: "example@example.com",
+    password: example
+}
+* Verifique que deu mensagem de sucesso (201 created)
+* Verificar na caixa de entrada do mailTrap a mensagem examplo
  
 
-
-
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
-
-## 📫 Contribuindo para <Login-project>
+## 📫 Contribuindo para <api-mailprovider>
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
-Para contribuir com <Login-project>, siga estas etapas:
+Para contribuir com <api-mailprovider>, siga estas etapas:
 
 1. Bifurque este repositório.
 2. Crie um branch: `git checkout -b <nome_branch>`.
 3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
-4. Envie para o branch original: `git push origin <Login-project> / <local>`
+4. Envie para o branch original: `git push origin <api-mailprovider> / <local>`
 5. Crie a solicitação de pull.
 
 Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 
-[⬆ Voltar ao topo](#Login-project)<br>
+[⬆ Voltar ao topo](#api-mailprovider)<br>
